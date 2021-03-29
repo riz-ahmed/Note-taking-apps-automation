@@ -12,8 +12,9 @@ if zip_file == []:
 	sys.exit('No zip file')
 
 # unzip and add the extract to the 'unzipped' folder
-with zipfile.ZipFile(path_to_zip_folder + '/' + zip_file[0], 'r') as zip_ref:
-    zip_ref.extractall(path_to_zip_folder + "/unzipped")	# extract all thet zip contents to 'unzipped' folder
+for file in zip_file:
+	with zipfile.ZipFile(path_to_zip_folder + '/' + file, 'r') as zip_ref:
+	    zip_ref.extractall(path_to_zip_folder + "/unzipped")	# extract all thet zip contents to 'unzipped' folder
 
 # rename '.md' file before moving
 
@@ -38,3 +39,7 @@ file_names = os.listdir(source_dir)					# list all files in the dir
 ### cycle through the list and move all files to 'target_dir'
 for file_name in file_names:
 	shutil.move(os.path.join(source_dir, file_name), target_dir)
+
+# delete the zip file downloaded form notion
+for file in zip_file:
+	os.remove(file)

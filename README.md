@@ -1,4 +1,7 @@
 # Note-taking-apps-automation
+
+
+## Transfer notes from Notion to Obsidian
 Automating file transfer between Notion and Obsidian on Mac
 
 

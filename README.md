@@ -12,6 +12,7 @@ Automating file transfer between Notion and Obsidian on Mac
 - [x] delete the Notion file
 - [] pass file_name as arguments while running the file
 - [] pass destination to Para - notes as arguments while running the file
+- [x] location on para-notes folder can be changed to different areas
 
 
 ### Specifications
@@ -21,3 +22,4 @@ Automating file transfer between Notion and Obsidian on Mac
 - rename '.md' file to the title of the Notion page
 - move extracts and the renamed file to Obisdian 'para-notes' folder
 - delete '.zip' file to clean up the downloads folder
+- switcher function enables the user to input the desired location in the para-notes folder so as to choose the desired areas for the new note

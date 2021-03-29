@@ -4,6 +4,15 @@
 ## Transfer notes from Notion to Obsidian
 Automating file transfer between Notion and Obsidian on Mac
 
+### Requirements
+
+- [x] unzip Notion files
+- [x] rename '.md' to specified tile
+- [x] move Notion files to Obsidian Para - notes
+- [x] delete the Notion file
+- [] pass file_name as arguments while running the file
+- [] pass destination to Para - notes as arguments while running the file
+
 
 ### Specifications
 
